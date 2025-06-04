@@ -1,0 +1,16 @@
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\SAMSDB.db
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.exe.config
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.exe
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.pdb
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\System.Data.SQLite.dll
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\System.Data.SQLite.xml
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.AssemblyReference.cache
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe.config
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.Form1.resources
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.Properties.Resources.resources
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.GenerateResource.cache
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.CoreCompileInputs.cache
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.Up2Date
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.pdb

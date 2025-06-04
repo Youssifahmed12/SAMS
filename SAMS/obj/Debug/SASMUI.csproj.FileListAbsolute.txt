@@ -1,0 +1,16 @@
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\SAMSDB.db
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\StudentAttendanceSystem.exe.config
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\StudentAttendanceSystem.exe
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\StudentAttendanceSystem.pdb
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\SASMUI.csproj.AssemblyReference.cache
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\StudentAttendanceSystem.exe.config
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\StudentAttendanceSystem.Form1.resources
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\StudentAttendanceSystem.Properties.Resources.resources
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\SASMUI.csproj.GenerateResource.cache
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\SASMUI.csproj.CoreCompileInputs.cache
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\SASMUI.csproj.Up2Date
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\StudentAttendanceSystem.exe
+C:\Stuff\Projects\SASM\SASMUI\obj\Debug\StudentAttendanceSystem.pdb
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\System.Data.SQLite.dll
+C:\Stuff\Projects\SASM\SASMUI\bin\Debug\System.Data.SQLite.xml
