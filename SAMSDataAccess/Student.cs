@@ -11,7 +11,7 @@ namespace SAMSDataAccess
 {
     public static class Student
     {
-        public static bool AddStudent(string Name,string PersonalPhone,string ParentPhone,int Year,int CenterID,int SchoolID)
+        public static bool AddStudent(string Name,string PersonalPhone,string ParentPhone,int Year,int CenterID,int SchoolID, int Specialiaztion)
         {
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
@@ -24,16 +24,17 @@ namespace SAMSDataAccess
                     cmd.Parameters.AddWithValue("@Year", Year);
                     cmd.Parameters.AddWithValue("@CenterID", CenterID);
                     cmd.Parameters.AddWithValue("@SchoolID", SchoolID);
+                    cmd.Parameters.AddWithValue("@Specialization", Specialiaztion);
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
         }
-        public static bool UpdateStudent(int StudentID, string Name, string PersonalPhone, string ParentPhone, int Year, int CenterID, int SchoolID)
+        public static bool UpdateStudent(int StudentID, string Name, string PersonalPhone, string ParentPhone, int Year, int CenterID, int SchoolID,int Specialiaztion)
         {
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
                 conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Students SET Name = @Name, PersonalPhone = @PersonalPhone, ParentPhone = @ParentPhone, Year = @Year, CenterID = @CenterID, SchoolID = @SchoolID WHERE StudentID = @StudentID", conn))
+                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Students SET Name = @Name, PersonalPhone = @PersonalPhone, ParentPhone = @ParentPhone, Year = @Year, CenterID = @CenterID, SchoolID = @SchoolID , Specialization = @Specialization WHERE StudentID = @StudentID", conn))
                 {
                     cmd.Parameters.AddWithValue("@StudentID", StudentID);
                     cmd.Parameters.AddWithValue("@Name", Name);
@@ -42,6 +43,8 @@ namespace SAMSDataAccess
                     cmd.Parameters.AddWithValue("@Year", Year);
                     cmd.Parameters.AddWithValue("@CenterID", CenterID);
                     cmd.Parameters.AddWithValue("@SchoolID", SchoolID);
+                    cmd.Parameters.AddWithValue("@Specialization", Specialiaztion);
+
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
