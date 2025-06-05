@@ -30,7 +30,7 @@ namespace SAMSDataAccess
             return dt;
         }
         
-        public static DataTable GetReigesteredStudentsForCourse(int CourseID)
+        public static DataTable GetEnrolledStudentsForCourse(int CourseID)
         {
             DataTable dt = new DataTable();
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
@@ -48,7 +48,7 @@ namespace SAMSDataAccess
             return dt;
         }
 
-        public static bool RegisterStudentToCourse(int StudentID, int CourseID, DateTime RegDate)
+        public static bool EnrollStudentToCourse(int StudentID, int CourseID, DateTime RegDate)
         {
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
