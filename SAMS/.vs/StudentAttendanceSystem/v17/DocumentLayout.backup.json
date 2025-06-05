@@ -3,20 +3,14 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\lectures\\lecturetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\lectures\\lectures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\attendance\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +20,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T16:11:55.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\Student.cs",
               "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Student\\Student.cs",
               "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\Student.cs",
               "RelativeToolTip": "..\\SAMSDataAccess\\Student\\Student.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAACcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAACcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T16:00:30.248Z",
               "EditorCaption": ""
@@ -44,19 +49,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LectureTypes.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T15:49:05.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Lectures.cs",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\Lectures.cs",
               "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Lectures\\Lectures.cs",
@@ -64,34 +56,7 @@
               "RelativeToolTip": "..\\SAMSDataAccess\\Lectures\\Lectures.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAjwCIAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T15:47:56.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T15:46:34.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Attendance.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAwNoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T12:44:36.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T15:47:56.649Z"
             }
           ]
         }

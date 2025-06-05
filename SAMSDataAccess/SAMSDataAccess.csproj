@@ -51,7 +51,7 @@
     <Compile Include="Schools &amp; Centers\Centers.cs" />
     <Compile Include="Courses\Courses.cs" />
     <Compile Include="Lectures\Lectures.cs" />
-    <Compile Include="Lectures\LectureTypes.cs" />
+    <Compile Include="Lectures\LecturesTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Courses\Enrollments.cs" />
     <Compile Include="Schools &amp; Centers\Schools.cs" />
