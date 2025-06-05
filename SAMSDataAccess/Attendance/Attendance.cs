@@ -199,5 +199,27 @@ namespace SAMSDataAccess
             }
         }
 
+        public int GetAttendanceCount(int CourseID,int LecNum,DateTime Date)
+        {
+           try
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+                {
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT COUNT(*) FROM Attendance WHERE CourseID = @CourseID AND LectureID = @LectureID AND Date = @Date", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CourseID", CourseID);
+                        cmd.Parameters.AddWithValue("@LectureID", LecNum);
+                        cmd.Parameters.AddWithValue("@Date", Date);
+                        return Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+        }
+
     }
 }
