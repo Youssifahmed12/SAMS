@@ -13,55 +13,83 @@ namespace SAMSDataAccess
     {
         public static DataTable GetALlCenters()
         {
-            DataTable dt = new DataTable();
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM Centers", conn))
+                DataTable dt = new DataTable();
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM Centers", conn))
                     {
-                        da.Fill(dt);
+                        using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
                     }
                 }
+                return dt;
             }
-            return dt;  
+            catch (Exception)
+            {
+                return null;
+            }
         }
         public static bool AddCenter(string CenterName)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Centers (Name) VALUES (@Name)", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@Name", CenterName);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Centers (Name) VALUES (@Name)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", CenterName);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
         public static bool UpdateCenter(int CenterID, string CenterName)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Centers SET Name = @Name WHERE CenterID = @CenterID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@Name", CenterName);
-                    cmd.Parameters.AddWithValue("@CenterID", CenterID);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Centers SET Name = @Name WHERE CenterID = @CenterID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", CenterName);
+                        cmd.Parameters.AddWithValue("@CenterID", CenterID);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
         public static bool DeleteCenter(int CenterID)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM Centers WHERE CenterID = @CenterID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@CenterID", CenterID);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM Centers WHERE CenterID = @CenterID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CenterID", CenterID);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
     }

@@ -13,17 +13,24 @@ namespace SAMSDataAccess
     {
         public static DataTable GetStudentYears()
         {
-            DataTable dt = new DataTable();
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM StudentYears", conn))
-                using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                DataTable dt = new DataTable();
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    da.Fill(dt);
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM StudentYears", conn))
+                    using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
                 }
+                return dt;
             }
-            return dt;
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

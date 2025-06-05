@@ -13,56 +13,84 @@ namespace SAMSDataAccess
     {
         public static DataTable GetAllSchools()
         {
-            DataTable dt = new DataTable();
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM Schools", conn))
+                DataTable dt = new DataTable();
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM Schools", conn))
                     {
-                        da.Fill(dt);
+                        using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
                     }
                 }
+                return dt;
             }
-            return dt;
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public static bool AddSchool(string SchoolName)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Schools (Name) VALUES (@Name)", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@Name", SchoolName);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Schools (Name) VALUES (@Name)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", SchoolName);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
         public static bool UpdateSchool(int SchoolID, string SchoolName)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Schools SET Name = @Name WHERE SchoolID = @SchoolID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@Name", SchoolName);
-                    cmd.Parameters.AddWithValue("@SchoolID", SchoolID);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Schools SET Name = @Name WHERE SchoolID = @SchoolID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", SchoolName);
+                        cmd.Parameters.AddWithValue("@SchoolID", SchoolID);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
         public static bool DeleteSchool(int SchoolID)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM Schools WHERE SchoolID = @SchoolID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@SchoolID", SchoolID);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM Schools WHERE SchoolID = @SchoolID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@SchoolID", SchoolID);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
     }

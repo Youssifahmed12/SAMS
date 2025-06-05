@@ -11,18 +11,24 @@ namespace SAMSDataAccess
     public static class Users
     {
         public static bool Login(string username, string password)
-        { 
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+        {
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT 1 FROM Users WHERE Username = @UserName AND Password = @Password LIMIT 1", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@UserName", username);
-                    cmd.Parameters.AddWithValue("@Password", password);
-                    return Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT 1 FROM Users WHERE Username = @UserName AND Password = @Password LIMIT 1", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserName", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
+                        return Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+                    }
                 }
             }
+            catch (Exception)
+            {
+                return false;
+            }
         }
-
     }
 }

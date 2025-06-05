@@ -14,60 +14,88 @@ namespace SAMSDataAccess
     {
         public static DataTable GetAllAttendingDaysForCourse(int CourseID)
         {
-           using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                DataTable dt = new DataTable();
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM AttendingDays WHERE CourseID = @CourseID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@CourseID", CourseID);
-                    using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                    DataTable dt = new DataTable();
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM AttendingDays WHERE CourseID = @CourseID", conn))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.AddWithValue("@CourseID", CourseID);
+                        using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
                     }
+                    return dt;
                 }
-                return dt;
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
 
         public static bool AddAttendanceDay(int CourseID, DateTime Day)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO AttendingDays (CourseID, Day) VALUES (@CourseID, @Day)", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@CourseID", CourseID);
-                    cmd.Parameters.AddWithValue("@Day", Day);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO AttendingDays (CourseID, Day) VALUES (@CourseID, @Day)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CourseID", CourseID);
+                        cmd.Parameters.AddWithValue("@Day", Day);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
 
         public static bool DeleteAttendanceDay(int AttendanceDayID)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM AttendingDays WHERE AttendingDayID = @AttendingDayID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@AttendingDayID", AttendanceDayID);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM AttendingDays WHERE AttendingDayID = @AttendingDayID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@AttendingDayID", AttendanceDayID);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
 
         public static bool UpdateAttendanceDay(int AttendanceDayID, DateTime Day)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE AttendingDays SET Day = @Day WHERE AttendingDayID = @AttendingDayID", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@AttendingDayID", AttendanceDayID);
-                    cmd.Parameters.AddWithValue("@Day", Day);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("UPDATE AttendingDays SET Day = @Day WHERE AttendingDayID = @AttendingDayID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@AttendingDayID", AttendanceDayID);
+                        cmd.Parameters.AddWithValue("@Day", Day);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

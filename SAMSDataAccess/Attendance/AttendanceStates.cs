@@ -11,33 +11,47 @@ namespace SAMSDataAccess
 {
     public static class AttendanceStates
     {
-        public static DataTable GettAllStates ()
+        public static DataTable GettAllStates()
+        {
+            try
             {
-            DataTable dt = new DataTable();
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
-            {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM AttendanceStates", conn))
+                DataTable dt = new DataTable();
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM AttendanceStates", conn))
                     {
-                        da.Fill(dt);
+                        using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
                     }
                 }
+                return dt;
             }
-            return dt;
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public static bool AddState(string Name)
         {
-            using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+            try
             {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO AttendanceStates (Name) VALUES (@Name)", conn))
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
-                    cmd.Parameters.AddWithValue("@Name", Name);
-                    return cmd.ExecuteNonQuery() > 0;
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO AttendanceStates (Name) VALUES (@Name)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", Name);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
                 }
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
     }
