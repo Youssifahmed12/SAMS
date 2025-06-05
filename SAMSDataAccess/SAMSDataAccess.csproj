@@ -45,11 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Centers.cs" />
-    <Compile Include="Courses.cs" />
+    <Compile Include="Attendance\Attendance.cs" />
+    <Compile Include="Attendance\AttendingDays.cs" />
+    <Compile Include="Attendance\AttendanceStates.cs" />
+    <Compile Include="Schools &amp; Centers\Centers.cs" />
+    <Compile Include="Courses\Courses.cs" />
+    <Compile Include="Lectures\Lectures.cs" />
+    <Compile Include="Lectures\LectureTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Schools.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Courses\Enrollments.cs" />
+    <Compile Include="Schools &amp; Centers\Schools.cs" />
+    <Compile Include="Student\Student.cs" />
+    <Compile Include="Student\StudentYears.cs" />
     <Compile Include="Users.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

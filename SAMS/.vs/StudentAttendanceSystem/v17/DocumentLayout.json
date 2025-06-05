@@ -3,27 +3,20 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\lectures\\lecturetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\schools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\lectures\\lectures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\centers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\attendance\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,94 +26,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Courses.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Courses.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Courses.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Courses.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Courses.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T23:30:50.664Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Student.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Student.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAABHAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\Student.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Student\\Student.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\Student.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Student\\Student.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAACcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T23:22:35.164Z",
+              "WhenOpened": "2025-06-05T16:00:30.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Users.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Users.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Users.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Title": "LectureTypes.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Lectures\\LectureTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T21:22:18.26Z",
+              "WhenOpened": "2025-06-05T15:49:05.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lectures.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\Lectures.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Lectures\\Lectures.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\Lectures.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Lectures\\Lectures.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAjwCIAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T15:47:56.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T15:46:34.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Centers.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Centers.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Centers.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Centers.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Centers.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAzwD4AAAA1AAAAAAAAAA==",
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\Attendance.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Attendance\\Attendance.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\Attendance.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Attendance\\Attendance.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAwNoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T20:52:56.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Schools.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Schools.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Schools.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Schools.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Schools.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T20:53:12.034Z",
+              "WhenOpened": "2025-06-05T12:44:36.955Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T20:10:58.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T17:20:32.238Z"
             }
           ]
         }

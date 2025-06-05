@@ -32,7 +32,7 @@ namespace SAMSDataAccess
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
                 conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM Lectures WHERE LecID = @LecID", conn))
+                using (SQLiteCommand cmd = new SQLiteCommand("DELETE FROM Lectures WHERE LectureID = @LecID", conn))
                 {
                     cmd.Parameters.AddWithValue("@LecID", LecID);
                     return cmd.ExecuteNonQuery() > 0;
@@ -45,7 +45,7 @@ namespace SAMSDataAccess
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
                 conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Lectures SET LecNum = @LecNum, CourseID = @CourseID, TypeID = @TypeID, Date = @Date WHERE LecID = @LecID", conn))
+                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Lectures SET LecNum = @LecNum, CourseID = @CourseID, TypeID = @TypeID, Date = @Date WHERE LectureID = @LecID", conn))
                 {
                     cmd.Parameters.AddWithValue("@LecID", LecID);
                     cmd.Parameters.AddWithValue("@LecNum", LecNum);

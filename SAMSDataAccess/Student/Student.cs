@@ -18,7 +18,7 @@ namespace SAMSDataAccess
                 using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
                     conn.Open();
-                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Students (Name,PersonalPhone,ParentPhone,Year,CenterID,SchoolID) VALUES (@Name,@PersonalPhone,@ParentPhone,@Year,@CenterID,@SchoolID)", conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Students (Name,PersonalPhone,ParentPhone,Year,CenterID,SchoolID,Specialization) VALUES (@Name,@PersonalPhone,@ParentPhone,@Year,@CenterID,@SchoolID,@Specialization)", conn))
                     {
                         cmd.Parameters.AddWithValue("@Name", Name);
                         cmd.Parameters.AddWithValue("@PersonalPhone", PersonalPhone);
