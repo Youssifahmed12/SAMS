@@ -105,5 +105,26 @@ namespace SAMSDataAccess
                 return null;
             }
         }
+
+        public static bool DoesStudentExist(int StudentID)
+        {
+            try
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+                {
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT COUNT(*) FROM Students WHERE StudentID = @StudentID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@StudentID", StudentID);
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        return count > 0;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
