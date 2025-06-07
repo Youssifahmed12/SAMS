@@ -57,7 +57,7 @@
     <Compile Include="Schools &amp; Centers\Schools.cs" />
     <Compile Include="Student\Student.cs" />
     <Compile Include="Student\StudentYears.cs" />
-    <Compile Include="Users.cs" />
+    <Compile Include="Users\Users.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

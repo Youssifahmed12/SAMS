@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>df38e202-43e7-49be-b2f5-7ad9c40af938</ProjectGuid>
+    <ProjectGuid>{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SAMSBuisness</RootNamespace>
@@ -31,24 +31,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Attendance\Attendance.cs" />
+    <Compile Include="Attendance\AttendanceStates.cs" />
+    <Compile Include="Attendance\AttendingDays.cs" />
+    <Compile Include="Courses\Courses.cs" />
+    <Compile Include="Courses\Enrollments.cs" />
+    <Compile Include="Lectures\Lectures.cs" />
+    <Compile Include="Lectures\LecturesTypes.cs" />
+    <Compile Include="Schools &amp; Centers\Centers.cs" />
+    <Compile Include="Schools &amp; Centers\Schools.cs" />
+    <Compile Include="Student\Student.cs" />
+    <Compile Include="Student\StudentYears.cs" />
+    <Compile Include="Users\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAMSDataAccess\SAMSDataAccess.csproj">
+      <Project>{19011166-5d33-4193-b41c-6406dfe512d1}</Project>
+      <Name>SAMSDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

@@ -11,17 +11,20 @@ namespace SAMSDataAccess
 {
     public static class Lectures
     {
-        public static bool AddLecture(int LecNum, int CourseID, int TypeID, DateTime date)
+        public static bool AddLecture(int LecNum, int CourseID, int TypeID, DateTime date , float TeacherCut,float CenterCut)
         {
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
                 conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Lectures (LecNum, CourseID, TypeID, Date) VALUES (@LecNum, @CourseID, @TypeID, @Date)", conn))
+                using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Lectures (LecNum, CourseID, TypeID, Date,TeacherCut,CenterCut) VALUES (@LecNum, @CourseID, @TypeID, @Date,@TeacherCut,@CenterCut)", conn))
                 {
                     cmd.Parameters.AddWithValue("@LecNum", LecNum);
                     cmd.Parameters.AddWithValue("@CourseID", CourseID);
                     cmd.Parameters.AddWithValue("@TypeID", TypeID);
                     cmd.Parameters.AddWithValue("@Date", date);
+                    cmd.Parameters.AddWithValue("@TeacherCut", TeacherCut);
+                    cmd.Parameters.AddWithValue("@CenterCut", CenterCut);
+
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
@@ -40,18 +43,20 @@ namespace SAMSDataAccess
             }
         }
 
-        public static bool UpdateLecture(int LecID, int LecNum, int CourseID, int TypeID, DateTime date)
+        public static bool UpdateLecture(int LecID, int LecNum, int CourseID, int TypeID, DateTime date ,float TeacherCut, float CenterCut)
         {
             using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
             {
                 conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Lectures SET LecNum = @LecNum, CourseID = @CourseID, TypeID = @TypeID, Date = @Date WHERE LectureID = @LecID", conn))
+                using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Lectures SET LecNum = @LecNum, CourseID = @CourseID, TypeID = @TypeID, Date = @Date, TeacherCut = @TeacherCut , CenterCut = @CenterCut WHERE LectureID = @LecID", conn))
                 {
                     cmd.Parameters.AddWithValue("@LecID", LecID);
                     cmd.Parameters.AddWithValue("@LecNum", LecNum);
                     cmd.Parameters.AddWithValue("@CourseID", CourseID);
                     cmd.Parameters.AddWithValue("@TypeID", TypeID);
                     cmd.Parameters.AddWithValue("@Date", date);
+                    cmd.Parameters.AddWithValue("@TeacherCut", TeacherCut);
+                    cmd.Parameters.AddWithValue("@CenterCut", CenterCut);
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }

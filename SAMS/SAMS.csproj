@@ -109,6 +109,12 @@
   <ItemGroup>
     <None Include="Resources\favpng_66d2ee0d79865dabe6d438d843a227cd.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAMSBuisness\SAMSBuisness.csproj">
+      <Project>{df38e202-43e7-49be-b2f5-7ad9c40af938}</Project>
+      <Name>SAMSBuisness</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SAMSBuisness.Courses
 {
-    internal class Courses
+    public class Courses
     {
     }
 }
