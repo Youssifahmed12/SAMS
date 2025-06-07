@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SAMSBuisness
 {
-    public class Class1
+    public class Users
     {
     }
 }

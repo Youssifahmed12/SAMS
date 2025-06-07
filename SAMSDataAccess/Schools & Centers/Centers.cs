@@ -11,7 +11,7 @@ namespace SAMSDataAccess
 {
     public static class Centers
     {
-        public static DataTable GetALlCenters()
+        public static DataTable GetAllCenters()
         {
             try
             {
