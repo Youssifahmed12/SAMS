@@ -13,11 +13,11 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
 {
     public partial class frmViewSchools : Form
     {
-        DataTable dt  = new DataTable();
+        DataTable dt = new DataTable();
         public frmViewSchools()
         {
             InitializeComponent();
-            UIHelpers.ApplyRoundedStyle(btnAddSchool,btnAddSchool.Height/2);
+            UIHelpers.ApplyRoundedStyle(btnAddSchool, btnAddSchool.Height / 2);
         }
 
         private void LoadData()
@@ -26,11 +26,11 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
             {
                 dt = SAMSBuisness.SchoolsAndCenters.Schools.GetAllSchools();
                 dgvSchools.DataSource = dt;
-                dgvSchools.Font = new Font("Questv1",18);
+                dgvSchools.Font = new Font("Questv1", 18);
                 dgvSchools.DefaultCellStyle.Padding = new Padding(5);
                 dgvSchools.Columns["SchoolID"].Visible = false;
                 dgvSchools.Columns["Name"].HeaderText = "اسم المدرسة";
-                lbNoOfSchools.Text = dt.Rows.Count.ToString();
+                lbNoOfLecutres.Text = dt.Rows.Count.ToString();
             }
             catch (Exception ex)
             {
@@ -46,19 +46,16 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
         {
 
             Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
+            frmAddEditSchoolAndCenter addSchoolForm = new frmAddEditSchoolAndCenter(GlobalVariables.ObjectTypes.School);
+            UIHelpers.ShowDialogWithDim(mainForm, addSchoolForm);
+            LoadData();
 
-            if (mainForm != null)
-            {
-                frmAddEditSchool addSchoolForm = new frmAddEditSchool();
-                UIHelpers.ShowDialogWithDim(mainForm, addSchoolForm);
-                LoadData();
-            }
         }
 
         private void EditToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
-            frmAddEditSchool editSchoolForm = new frmAddEditSchool(Convert.ToInt32(dgvSchools.SelectedRows[0].Cells["SchoolID"].Value), dgvSchools.SelectedRows[0].Cells["Name"].Value.ToString());
+            frmAddEditSchoolAndCenter editSchoolForm = new frmAddEditSchoolAndCenter(GlobalVariables.ObjectTypes.School,Convert.ToInt32(dgvSchools.SelectedRows[0].Cells["SchoolID"].Value), dgvSchools.SelectedRows[0].Cells["Name"].Value.ToString());
             UIHelpers.ShowDialogWithDim(mainForm, editSchoolForm);
             LoadData();
         }

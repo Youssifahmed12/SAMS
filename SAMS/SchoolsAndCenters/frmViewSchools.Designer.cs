@@ -39,7 +39,7 @@
             this.EditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddSchool = new System.Windows.Forms.Button();
-            this.lbNoOfSchools = new System.Windows.Forms.Label();
+            this.lbNoOfLecutres = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSchools)).BeginInit();
             this.ctxSchoolDgv.SuspendLayout();
@@ -103,19 +103,19 @@
             this.EditToolStripMenuItem,
             this.DeleteToolStripMenuItem});
             this.ctxSchoolDgv.Name = "ctxSchoolDgv";
-            this.ctxSchoolDgv.Size = new System.Drawing.Size(181, 70);
+            this.ctxSchoolDgv.Size = new System.Drawing.Size(99, 48);
             // 
             // EditToolStripMenuItem
             // 
             this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EditToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.EditToolStripMenuItem.Text = "عًدٍل";
             this.EditToolStripMenuItem.Click += new System.EventHandler(this.EditToolStripMenuItem_Click);
             // 
             // DeleteToolStripMenuItem
             // 
             this.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem";
-            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.DeleteToolStripMenuItem.Text = "مسح";
             this.DeleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
             // 
@@ -137,15 +137,15 @@
             this.btnAddSchool.UseVisualStyleBackColor = false;
             this.btnAddSchool.Click += new System.EventHandler(this.btnAddSchool_Click);
             // 
-            // lbNoOfSchools
+            // lbNoOfLecutres
             // 
-            this.lbNoOfSchools.AutoSize = true;
-            this.lbNoOfSchools.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbNoOfSchools.Location = new System.Drawing.Point(51, 71);
-            this.lbNoOfSchools.Name = "lbNoOfSchools";
-            this.lbNoOfSchools.Size = new System.Drawing.Size(18, 20);
-            this.lbNoOfSchools.TabIndex = 2;
-            this.lbNoOfSchools.Text = "0";
+            this.lbNoOfLecutres.AutoSize = true;
+            this.lbNoOfLecutres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbNoOfLecutres.Location = new System.Drawing.Point(51, 71);
+            this.lbNoOfLecutres.Name = "lbNoOfLecutres";
+            this.lbNoOfLecutres.Size = new System.Drawing.Size(18, 20);
+            this.lbNoOfLecutres.TabIndex = 2;
+            this.lbNoOfLecutres.Text = "0";
             // 
             // label1
             // 
@@ -164,7 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 826);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbNoOfSchools);
+            this.Controls.Add(this.lbNoOfLecutres);
             this.Controls.Add(this.btnAddSchool);
             this.Controls.Add(this.dgvSchools);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -182,7 +182,7 @@
 
         private System.Windows.Forms.DataGridView dgvSchools;
         private System.Windows.Forms.Button btnAddSchool;
-        private System.Windows.Forms.Label lbNoOfSchools;
+        private System.Windows.Forms.Label lbNoOfLecutres;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip ctxSchoolDgv;
         private System.Windows.Forms.ToolStripMenuItem EditToolStripMenuItem;
