@@ -51,6 +51,7 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
             {
                 frmAddSchool addSchoolForm = new frmAddSchool();
                 UIHelpers.ShowDialogWithDim(mainForm, addSchoolForm);
+                LoadData();
             }
         }
     }
