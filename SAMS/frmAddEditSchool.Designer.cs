@@ -1,6 +1,6 @@
 ﻿namespace StudentAttendanceSystem
 {
-    partial class frmAddSchool
+    partial class frmAddEditSchool
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtSchoolName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbHeaderText = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -69,17 +69,19 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "الاسم :";
             // 
-            // label2
+            // lbHeaderText
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Questv1", 18F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
-            this.label2.Location = new System.Drawing.Point(114, 44);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(142, 32);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "اضافة مدرسة";
+            this.lbHeaderText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbHeaderText.AutoSize = true;
+            this.lbHeaderText.Font = new System.Drawing.Font("Questv1", 18F);
+            this.lbHeaderText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
+            this.lbHeaderText.Location = new System.Drawing.Point(114, 32);
+            this.lbHeaderText.Name = "lbHeaderText";
+            this.lbHeaderText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbHeaderText.Size = new System.Drawing.Size(142, 32);
+            this.lbHeaderText.TabIndex = 3;
+            this.lbHeaderText.Text = "اضافة مدرسة";
             // 
             // btnClose
             // 
@@ -95,19 +97,19 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // frmAddSchool
+            // frmAddEditSchool
             // 
             this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 249);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbHeaderText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSchoolName);
             this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAddSchool";
+            this.Name = "frmAddEditSchool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddSchool";
             this.Load += new System.EventHandler(this.frmAddSchool_Load);
@@ -121,7 +123,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtSchoolName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbHeaderText;
         private System.Windows.Forms.Button btnClose;
     }
 }

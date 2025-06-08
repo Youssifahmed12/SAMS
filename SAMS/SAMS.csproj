@@ -90,11 +90,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAddSchool.cs">
+    <Compile Include="frmAddEditSchool.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddSchool.Designer.cs">
-      <DependentUpon>frmAddSchool.cs</DependentUpon>
+    <Compile Include="frmAddEditSchool.Designer.cs">
+      <DependentUpon>frmAddEditSchool.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
@@ -111,8 +111,8 @@
       <DependentUpon>frmViewSchools.cs</DependentUpon>
     </Compile>
     <Compile Include="UIHelpers.cs" />
-    <EmbeddedResource Include="frmAddSchool.resx">
-      <DependentUpon>frmAddSchool.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddEditSchool.resx">
+      <DependentUpon>frmAddEditSchool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>

@@ -10,18 +10,34 @@ using System.Windows.Forms;
 
 namespace StudentAttendanceSystem
 {
-    public partial class frmAddSchool : Form
+    public partial class frmAddEditSchool : Form
     {
-        public frmAddSchool()
+        int ID;
+        string SchoolName;
+        public frmAddEditSchool(int ID = 0,string SchoolName = "")
         {
             InitializeComponent();
             UIHelpers.ApplyRoundedStyle(btnAdd, btnAdd.Height / 2);
             UIHelpers.ApplyRoundedStyle(btnClose, btnClose.Height / 2);
+            this.ID = ID;
+            this.SchoolName = SchoolName;
         }
 
         private void frmAddSchool_Load(object sender, EventArgs e)
         {
+            if (ID == 0)
+            {
+                lbHeaderText.Text = "إضافة مدرسة جديدة";
+                btnAdd.Text = "اضف";
 
+            }
+            else
+            {
+                lbHeaderText.Text = "تعديل بيانات المدرسة";
+                txtSchoolName.Text = SchoolName;
+                btnAdd.Text = "عَدِل";
+            }
+            lbHeaderText.Left = (lbHeaderText.Parent.ClientSize.Width - lbHeaderText.Width) / 2;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -31,14 +47,15 @@ namespace StudentAttendanceSystem
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(txtSchoolName.Text))
             {
-                MessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("من فضلك املأ البيانات المطلوبة", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (SAMSBuisness.SchoolsAndCenters.Schools.AddSchool(txtSchoolName.Text.Trim()))
+            if (SAMSBuisness.SchoolsAndCenters.Schools.Save(ID, txtSchoolName.Text.Trim()))
             {
-                MessageBox.Show("School added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"تم {lbHeaderText.Text}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             else

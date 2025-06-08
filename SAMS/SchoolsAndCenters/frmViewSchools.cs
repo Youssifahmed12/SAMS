@@ -44,15 +44,24 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
 
         private void btnAddSchool_Click(object sender, EventArgs e)
         {
-            
+
             Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
 
             if (mainForm != null)
             {
-                frmAddSchool addSchoolForm = new frmAddSchool();
+                frmAddEditSchool addSchoolForm = new frmAddEditSchool();
                 UIHelpers.ShowDialogWithDim(mainForm, addSchoolForm);
                 LoadData();
             }
+        }
+
+        private void EditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
+
+            frmAddEditSchool editSchoolForm = new frmAddEditSchool(Convert.ToInt32(dgvSchools.SelectedRows[0].Cells["SchoolID"].Value), dgvSchools.SelectedRows[0].Cells["Name"].Value.ToString());
+            UIHelpers.ShowDialogWithDim(mainForm, editSchoolForm);
+            LoadData();
         }
     }
 }

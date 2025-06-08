@@ -25,4 +25,4 @@ C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe.manifest
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.application
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.SchoolsAndCenters.frmViewSchools.resources
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmMainMenu.resources
-C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmAddSchool.resources
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmAddEditSchool.resources

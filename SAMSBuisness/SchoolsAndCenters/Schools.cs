@@ -13,17 +13,29 @@ namespace SAMSBuisness.SchoolsAndCenters
         {
             return SAMSDataAccess.Schools.GetAllSchools();
         }
-        public static bool AddSchool(string SchoolName)
+        private static bool AddSchool(string SchoolName)
         {
             return SAMSDataAccess.Schools.AddSchool(SchoolName);
         }
-        public static bool UpdateSchool(int SchoolID, string SchoolName)
+        private static bool UpdateSchool(int SchoolID, string SchoolName)
         {
             return SAMSDataAccess.Schools.UpdateSchool(SchoolID, SchoolName);
         }
         public static bool DeleteSchool(int SchoolID)
         {
             return SAMSDataAccess.Schools.DeleteSchool(SchoolID);
+        }
+
+        public static bool Save(int ID, string SchoolName)
+        {
+            if (ID == 0)
+            {
+                return AddSchool(SchoolName);
+            }
+            else
+            {
+                return UpdateSchool(ID, SchoolName);
+            }
         }
 
     }
