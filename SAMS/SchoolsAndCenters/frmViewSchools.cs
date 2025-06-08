@@ -41,8 +41,17 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
         {
             LoadData();
         }
-        
-        
 
+        private void btnAddSchool_Click(object sender, EventArgs e)
+        {
+            
+            Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
+
+            if (mainForm != null)
+            {
+                frmAddSchool addSchoolForm = new frmAddSchool();
+                UIHelpers.ShowDialogWithDim(mainForm, addSchoolForm);
+            }
+        }
     }
 }
