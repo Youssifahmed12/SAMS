@@ -30,6 +30,7 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
                 dgvSchools.DefaultCellStyle.Padding = new Padding(5);
                 dgvSchools.Columns["SchoolID"].Visible = false;
                 dgvSchools.Columns["Name"].HeaderText = "اسم المدرسة";
+                lbNoOfSchools.Text = dt.Rows.Count.ToString();
             }
             catch (Exception ex)
             {

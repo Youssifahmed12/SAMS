@@ -34,7 +34,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnSchools = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             this.kryptonPanel1.Controls.Add(this.pictureBox2);
             this.kryptonPanel1.Controls.Add(this.button8);
             this.kryptonPanel1.Controls.Add(this.button7);
-            this.kryptonPanel1.Controls.Add(this.button6);
+            this.kryptonPanel1.Controls.Add(this.btnSchools);
             this.kryptonPanel1.Controls.Add(this.button5);
             this.kryptonPanel1.Controls.Add(this.button4);
             this.kryptonPanel1.Controls.Add(this.button3);
@@ -143,26 +143,26 @@
             this.button7.Text = "الامتحانات";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnSchools
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Questv1", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_school_48;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(0, 506);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(263, 83);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "المدارس";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnSchools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
+            this.btnSchools.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSchools.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btnSchools.FlatAppearance.BorderSize = 0;
+            this.btnSchools.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnSchools.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.btnSchools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSchools.Font = new System.Drawing.Font("Questv1", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchools.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSchools.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_school_48;
+            this.btnSchools.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSchools.Location = new System.Drawing.Point(0, 506);
+            this.btnSchools.Name = "btnSchools";
+            this.btnSchools.Size = new System.Drawing.Size(263, 83);
+            this.btnSchools.TabIndex = 6;
+            this.btnSchools.Text = "المدارس";
+            this.btnSchools.UseVisualStyleBackColor = false;
+            this.btnSchools.Click += new System.EventHandler(this.btnSchools_Click);
             // 
             // button5
             // 
@@ -336,7 +336,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSchools;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;

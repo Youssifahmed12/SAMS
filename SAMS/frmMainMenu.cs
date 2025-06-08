@@ -52,13 +52,11 @@ namespace StudentAttendanceSystem
             _currentForm.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+
+        private void btnSchools_Click(object sender, EventArgs e)
         {
             LoadForm(new SchoolsAndCenters.frmViewSchools());
             ChangeLabelName("المدارس");
         }
-
-        
-
     }
 }
