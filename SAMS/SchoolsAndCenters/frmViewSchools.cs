@@ -58,9 +58,16 @@ namespace StudentAttendanceSystem.SchoolsAndCenters
         private void EditToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
-
             frmAddEditSchool editSchoolForm = new frmAddEditSchool(Convert.ToInt32(dgvSchools.SelectedRows[0].Cells["SchoolID"].Value), dgvSchools.SelectedRows[0].Cells["Name"].Value.ToString());
             UIHelpers.ShowDialogWithDim(mainForm, editSchoolForm);
+            LoadData();
+        }
+
+        private void DeleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
+            frmDelete frmDelete = new frmDelete(Convert.ToInt32(dgvSchools.SelectedRows[0].Cells["SchoolID"].Value), GlobalVariables.ObjectTypes.School, dgvSchools.SelectedRows[0].Cells["Name"].Value.ToString());
+            UIHelpers.ShowDialogWithDim(mainForm, frmDelete);
             LoadData();
         }
     }
