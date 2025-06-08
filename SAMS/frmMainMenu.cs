@@ -31,7 +31,7 @@ namespace StudentAttendanceSystem
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+           SetupSideMenu();
         }
 
         public void LoadForm(Form formToLoad)
@@ -57,6 +57,64 @@ namespace StudentAttendanceSystem
         {
             LoadForm(new SchoolsAndCenters.frmViewSchools());
             ChangeLabelName("المدارس");
+        }
+
+
+        private Color defaultColor = Color.FromArgb(47, 128, 237);
+        private Color highlightColor;
+        private Color hoverColor;
+
+        private void SetupSideMenu()
+        {
+            highlightColor = ControlPaint.Light(defaultColor, 0.8f); // lighter shade
+            hoverColor = ControlPaint.Light(defaultColor, 0.2f);     // normal hover color
+
+            foreach (Control ctrl in sideMenuPanel.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    btn.Click += SideMenuButton_Click;
+                    btn.BackColor = defaultColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+
+                    // Set normal hover and pressed colors for all buttons initially
+                    btn.FlatAppearance.MouseOverBackColor = hoverColor;
+                    btn.FlatAppearance.MouseDownBackColor = ControlPaint.Light(defaultColor, 0.1f);
+                }
+            }
+        }
+
+        private void SideMenuButton_Click(object sender, EventArgs e)
+        {
+            if (sender is Button clickedButton)
+            {
+                foreach (Control ctrl in sideMenuPanel.Controls)
+                {
+                    if (ctrl is Button btn)
+                    {
+                        if (btn == clickedButton)
+                        {
+                            btn.BackColor = highlightColor;
+                            btn.ForeColor = Color.White;
+
+                            // Disable hover/pressed color changes for the selected button
+                            btn.FlatAppearance.MouseOverBackColor = btn.BackColor;
+                            btn.FlatAppearance.MouseDownBackColor = btn.BackColor;
+                        }
+                        else
+                        {
+                            // Reset others to default and enable hover effects
+                            btn.BackColor = defaultColor;
+                            btn.ForeColor = Color.White;
+
+                            btn.FlatAppearance.MouseOverBackColor = hoverColor;
+                            btn.FlatAppearance.MouseDownBackColor = ControlPaint.Light(defaultColor, 0.1f);
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
-            this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.sideMenuPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
@@ -44,33 +44,33 @@
             this.pnlTop = new System.Windows.Forms.Panel();
             this.lbHeaderText = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sideMenuPanel)).BeginInit();
+            this.sideMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
-            // kryptonPanel1
+            // sideMenuPanel
             // 
-            this.kryptonPanel1.Controls.Add(this.button9);
-            this.kryptonPanel1.Controls.Add(this.pictureBox2);
-            this.kryptonPanel1.Controls.Add(this.button8);
-            this.kryptonPanel1.Controls.Add(this.button7);
-            this.kryptonPanel1.Controls.Add(this.btnSchools);
-            this.kryptonPanel1.Controls.Add(this.button5);
-            this.kryptonPanel1.Controls.Add(this.button4);
-            this.kryptonPanel1.Controls.Add(this.button3);
-            this.kryptonPanel1.Controls.Add(this.button2);
-            this.kryptonPanel1.Controls.Add(this.button1);
-            this.kryptonPanel1.Controls.Add(this.pictureBox1);
-            this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.kryptonPanel1.Location = new System.Drawing.Point(1314, 0);
-            this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(263, 917);
-            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
-            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonPanel1.TabIndex = 0;
+            this.sideMenuPanel.Controls.Add(this.button9);
+            this.sideMenuPanel.Controls.Add(this.pictureBox2);
+            this.sideMenuPanel.Controls.Add(this.button8);
+            this.sideMenuPanel.Controls.Add(this.button7);
+            this.sideMenuPanel.Controls.Add(this.btnSchools);
+            this.sideMenuPanel.Controls.Add(this.button5);
+            this.sideMenuPanel.Controls.Add(this.button4);
+            this.sideMenuPanel.Controls.Add(this.button3);
+            this.sideMenuPanel.Controls.Add(this.button2);
+            this.sideMenuPanel.Controls.Add(this.button1);
+            this.sideMenuPanel.Controls.Add(this.pictureBox1);
+            this.sideMenuPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.sideMenuPanel.Location = new System.Drawing.Point(1314, 0);
+            this.sideMenuPanel.Name = "sideMenuPanel";
+            this.sideMenuPanel.Size = new System.Drawing.Size(263, 917);
+            this.sideMenuPanel.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
+            this.sideMenuPanel.StateCommon.Color2 = System.Drawing.Color.Transparent;
+            this.sideMenuPanel.TabIndex = 0;
             // 
             // button9
             // 
@@ -315,14 +315,14 @@
             this.ClientSize = new System.Drawing.Size(1577, 917);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlTop);
-            this.Controls.Add(this.kryptonPanel1);
+            this.Controls.Add(this.sideMenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmMainMenu";
             this.Text = "Main Page";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
-            this.kryptonPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sideMenuPanel)).EndInit();
+            this.sideMenuPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlTop.ResumeLayout(false);
@@ -333,7 +333,7 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel sideMenuPanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnSchools;

@@ -67,9 +67,6 @@ namespace StudentAttendanceSystem
             }
         }
 
-
-
-
         private class DimBackground : Form
         {
             public DimBackground(Form owner)
@@ -84,7 +81,7 @@ namespace StudentAttendanceSystem
             }
         }
 
-        private static void ApplyFadeInForPopUpForm(Form form, int interval = 3, double step = 0.05)
+        private static void ApplyFadeInForPopUpForm(Form form, int interval = 3, double step = 0.1)
         {
             form.Opacity = 0;
             Timer fadeTimer = new Timer { Interval = interval };
