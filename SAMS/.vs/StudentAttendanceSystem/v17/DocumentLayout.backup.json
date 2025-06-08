@@ -3,17 +3,16 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SAMS||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\attendance\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}|..\\SAMSBuisness\\SAMSBuisness.csproj|c:\\stuff\\projects\\sams\\samsbuisness\\courses\\enrollments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}|..\\SAMSBuisness\\SAMSBuisness.csproj|c:\\stuff\\projects\\sams\\samsbuisness\\lectures\\lecturestypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\lectures\\lectures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,50 +27,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\Student.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Student\\Student.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\Student.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Student\\Student.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAiwHkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:30:42.266Z",
+              "Title": "SAMS",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SAMS.csproj",
+              "RelativeDocumentMoniker": "SAMS.csproj",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SAMS.csproj*",
+              "RelativeToolTip": "SAMS.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-08T11:26:09.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Attendance.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Attendance\\Attendance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Title": "Enrollments.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Courses\\Enrollments.cs",
+              "RelativeDocumentMoniker": "..\\SAMSBuisness\\Courses\\Enrollments.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Courses\\Enrollments.cs",
+              "RelativeToolTip": "..\\SAMSBuisness\\Courses\\Enrollments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:30:22.73Z"
+              "WhenOpened": "2025-06-07T01:59:55.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "LecturesTypes.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Lectures\\LecturesTypes.cs",
+              "RelativeDocumentMoniker": "..\\SAMSBuisness\\Lectures\\LecturesTypes.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Lectures\\LecturesTypes.cs",
+              "RelativeToolTip": "..\\SAMSBuisness\\Lectures\\LecturesTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:11:55.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Lectures.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\Lectures.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Lectures\\Lectures.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Lectures\\Lectures.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Lectures\\Lectures.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAjwCIAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T15:47:56.649Z"
+              "WhenOpened": "2025-06-07T01:53:49.04Z"
             }
           ]
         }

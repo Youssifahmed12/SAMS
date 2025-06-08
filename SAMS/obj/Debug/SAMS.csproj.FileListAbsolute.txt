@@ -16,3 +16,11 @@ C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.pdb
 C:\Stuff\Projects\SAMS\SAMS\bin\Debug\SAMSDataAccess.dll
 C:\Stuff\Projects\SAMS\SAMS\bin\Debug\SAMSDataAccess.pdb
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\SAMSBuisness.dll
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\SAMSBuisness.pdb
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\x64\SQLite.Interop.dll
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\x86\SQLite.Interop.dll
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.exe.manifest
+C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.application
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe.manifest
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.application
