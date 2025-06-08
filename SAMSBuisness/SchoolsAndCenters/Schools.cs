@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace SAMSBuisness.Schools___Centers
+namespace SAMSBuisness.SchoolsAndCenters
 {
     public class Schools
     {

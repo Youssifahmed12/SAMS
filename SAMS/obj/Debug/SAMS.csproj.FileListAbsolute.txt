@@ -7,7 +7,6 @@ C:\Stuff\Projects\SAMS\SAMS\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 C:\Stuff\Projects\SAMS\SAMS\bin\Debug\System.Data.SQLite.xml
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.AssemblyReference.cache
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe.config
-C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.Form1.resources
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.Properties.Resources.resources
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.GenerateResource.cache
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\SAMS.csproj.CoreCompileInputs.cache
@@ -24,3 +23,5 @@ C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.exe.manifest
 C:\Stuff\Projects\SAMS\SAMS\bin\Debug\StudentAttendanceSystem.application
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.exe.manifest
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.application
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.SchoolsAndCenters.frmViewSchools.resources
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmMainMenu.resources

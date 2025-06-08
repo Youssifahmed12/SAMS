@@ -3,18 +3,23 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SAMS||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\schoolsandcenters\\frmviewschools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:schoolsandcenters\\frmviewschools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\schoolsandcenters\\frmviewschools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:schoolsandcenters\\frmviewschools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}|..\\SAMSBuisness\\SAMSBuisness.csproj|c:\\stuff\\projects\\sams\\samsbuisness\\lectures\\lecturestypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,28 +29,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SAMS",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SAMS.csproj",
-              "RelativeDocumentMoniker": "SAMS.csproj",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SAMS.csproj*",
-              "RelativeToolTip": "SAMS.csproj*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-08T11:51:37.872Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "frmViewSchools.cs [Design]",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewSchools.cs",
+              "RelativeDocumentMoniker": "SchoolsAndCenters\\frmViewSchools.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewSchools.cs [Design]",
+              "RelativeToolTip": "SchoolsAndCenters\\frmViewSchools.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:03:01.804Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Form1.cs [Design]*",
-              "RelativeToolTip": "Form1.cs [Design]*",
+              "DocumentIndex": 1,
+              "Title": "frmMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "frmMainMenu.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmMainMenu.cs [Design]",
+              "RelativeToolTip": "frmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T11:49:17.265Z",
               "EditorCaption": " [Design]"
@@ -53,6 +58,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "frmViewSchools.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewSchools.cs",
+              "RelativeDocumentMoniker": "SchoolsAndCenters\\frmViewSchools.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewSchools.cs",
+              "RelativeToolTip": "SchoolsAndCenters\\frmViewSchools.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:04:57.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMainMenu.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "frmMainMenu.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmMainMenu.cs",
+              "RelativeToolTip": "frmMainMenu.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T12:01:41.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LecturesTypes.cs",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Lectures\\LecturesTypes.cs",
               "RelativeDocumentMoniker": "..\\SAMSBuisness\\Lectures\\LecturesTypes.cs",
