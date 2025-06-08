@@ -16,11 +16,17 @@ namespace StudentAttendanceSystem
         {
             InitializeComponent();
             UIHelpers.ApplyRoundedStyle(btnAdd, btnAdd.Height / 2);
+            UIHelpers.ApplyRoundedStyle(btnClose, btnClose.Height / 2);
         }
 
         private void frmAddSchool_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
