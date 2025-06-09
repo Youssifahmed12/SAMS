@@ -96,10 +96,10 @@
     <Compile Include="frmAddEditLectures.Designer.cs">
       <DependentUpon>frmAddEditLectures.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewCenters.cs">
+    <Compile Include="SchoolsAndCenters\frmViewCenters.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewCenters.Designer.cs">
+    <Compile Include="SchoolsAndCenters\frmViewCenters.Designer.cs">
       <DependentUpon>frmViewCenters.cs</DependentUpon>
     </Compile>
     <Compile Include="frmViewLectures.cs">
@@ -139,7 +139,7 @@
     <EmbeddedResource Include="frmAddEditLectures.resx">
       <DependentUpon>frmAddEditLectures.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewCenters.resx">
+    <EmbeddedResource Include="SchoolsAndCenters\frmViewCenters.resx">
       <DependentUpon>frmViewCenters.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewLectures.resx">

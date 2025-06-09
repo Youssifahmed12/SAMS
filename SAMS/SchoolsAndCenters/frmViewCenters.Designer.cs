@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Questv1", 14F);
-            this.label1.Location = new System.Drawing.Point(70, 39);
+            this.label1.Location = new System.Drawing.Point(76, 66);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(105, 26);
@@ -60,7 +60,7 @@
             // 
             this.lbNoOfCenters.AutoSize = true;
             this.lbNoOfCenters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lbNoOfCenters.Location = new System.Drawing.Point(45, 44);
+            this.lbNoOfCenters.Location = new System.Drawing.Point(46, 72);
             this.lbNoOfCenters.Name = "lbNoOfCenters";
             this.lbNoOfCenters.Size = new System.Drawing.Size(18, 20);
             this.lbNoOfCenters.TabIndex = 6;
@@ -76,7 +76,7 @@
             this.btnAddCenter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddCenter.Font = new System.Drawing.Font("Questv1", 14F);
             this.btnAddCenter.ForeColor = System.Drawing.Color.White;
-            this.btnAddCenter.Location = new System.Drawing.Point(1063, 25);
+            this.btnAddCenter.Location = new System.Drawing.Point(1069, 52);
             this.btnAddCenter.Name = "btnAddCenter";
             this.btnAddCenter.Size = new System.Drawing.Size(219, 58);
             this.btnAddCenter.TabIndex = 5;
@@ -115,7 +115,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCenters.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCenters.EnableHeadersVisualStyles = false;
-            this.dgvCenters.Location = new System.Drawing.Point(16, 91);
+            this.dgvCenters.Location = new System.Drawing.Point(22, 118);
             this.dgvCenters.Name = "dgvCenters";
             this.dgvCenters.ReadOnly = true;
             this.dgvCenters.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -132,7 +132,7 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SkyBlue;
             this.dgvCenters.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCenters.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCenters.Size = new System.Drawing.Size(1266, 670);
+            this.dgvCenters.Size = new System.Drawing.Size(1282, 653);
             this.dgvCenters.TabIndex = 4;
             // 
             // ctxCenterlDgv
@@ -142,19 +142,19 @@
             this.EditToolStripMenuItem,
             this.DeleteToolStripMenuItem});
             this.ctxCenterlDgv.Name = "ctxSchoolDgv";
-            this.ctxCenterlDgv.Size = new System.Drawing.Size(181, 70);
+            this.ctxCenterlDgv.Size = new System.Drawing.Size(99, 48);
             // 
             // EditToolStripMenuItem
             // 
             this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EditToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.EditToolStripMenuItem.Text = "عًدٍل";
             this.EditToolStripMenuItem.Click += new System.EventHandler(this.EditToolStripMenuItem_Click);
             // 
             // DeleteToolStripMenuItem
             // 
             this.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem";
-            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.DeleteToolStripMenuItem.Text = "مسح";
             this.DeleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
             // 
@@ -162,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 787);
+            this.ClientSize = new System.Drawing.Size(1314, 826);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbNoOfCenters);
             this.Controls.Add(this.btnAddCenter);

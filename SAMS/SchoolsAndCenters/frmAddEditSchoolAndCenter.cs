@@ -15,14 +15,16 @@ namespace StudentAttendanceSystem
         int ID;
         string SchoolName;
         GlobalVariables.ObjectTypes objType;
-        public frmAddEditSchoolAndCenter(GlobalVariables.ObjectTypes objType, int ID = 0, string SchoolName = "")
+        public frmAddEditSchoolAndCenter(GlobalVariables.ObjectTypes objType, int ID = 0, string SchoolOrCenterName = "")
         {
             InitializeComponent();
             UIHelpers.ApplyRoundedStyle(btnAdd, btnAdd.Height / 2);
             UIHelpers.ApplyRoundedStyle(btnClose, btnClose.Height / 2);
             this.ID = ID;
-            this.SchoolName = SchoolName;
+            this.SchoolName = SchoolOrCenterName;
             this.objType = objType;
+            txtSchoolName.Text = SchoolOrCenterName;
+            btnAdd.Text = ID == 0 ? "إضافة" : "تعديل";
         }
 
         private void frmAddSchool_Load(object sender, EventArgs e)
@@ -81,7 +83,6 @@ namespace StudentAttendanceSystem
                     SaveCenter();
                     break;
                 default:
-                    lbHeaderText.Text = "إضافة مدرسة جديدة";
                     break;
             }
 
