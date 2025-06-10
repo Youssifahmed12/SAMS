@@ -32,9 +32,10 @@ namespace StudentAttendanceSystem
                 dgvCourses.DefaultCellStyle.Padding = new Padding(5);
                 dgvCourses.Columns["CourseID"].Visible = false;
                 dgvCourses.Columns["CourseName"].HeaderText = "اسم المادة";
-                dgvCourses.Columns["CenterName"].HeaderText = "اسم المركز";
-                dgvCourses.Columns["NoLecs"].HeaderText = " عدد المحاضرات الاسبوعية";
+                dgvCourses.Columns["CenterName"].HeaderText = "اسم السنتر";
                 dgvCourses.Columns["YearName"].HeaderText = "السنة الدراسية";
+                dgvCourses.Columns["NoLecs"].HeaderText = "عدد المحاضرات";
+                dgvCourses.Columns["DaysOfAttendance"].HeaderText = "أيام الحضور";
 
                 lbNoOfCourses.Text = dt.Rows.Count.ToString();
             }

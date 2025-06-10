@@ -60,7 +60,7 @@ namespace SAMSDataAccess
             }
         }
 
-        public static bool AddAttendanceDay(int CourseID, DateTime Day)
+        public static bool AddAttendanceDay(int CourseID, string Day)
         {
             try
             {

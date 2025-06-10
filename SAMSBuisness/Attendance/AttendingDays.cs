@@ -19,7 +19,7 @@ namespace SAMSBuisness.Attendance
             return SAMSDataAccess.AttendingDays.GetAllAttendingDaysForCourse(CourseID);
         }
 
-        public static bool AddAttendanceDay(int CourseID, DateTime Day)
+        public static bool AddAttendanceDay(int CourseID, string Day)
         {
             return SAMSDataAccess.AttendingDays.AddAttendanceDay(CourseID, Day);
         }

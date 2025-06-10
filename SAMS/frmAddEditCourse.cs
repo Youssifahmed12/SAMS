@@ -12,7 +12,7 @@ namespace StudentAttendanceSystem
 {
     public partial class frmAddEditCourse : Form
     {
-       int CourseID;
+        int CourseID;
         public frmAddEditCourse(int courseID = 0)
         {
             InitializeComponent();
@@ -25,9 +25,8 @@ namespace StudentAttendanceSystem
         {
             SetupForm();
             FillComboBoxes();
-            //if (CourseID != 0)
-            //    LoadCourseData(CourseID);
-
+            cbLecTwo.Enabled = false;
+            cbLecTwo.SelectedIndex = -1;
         }
 
         private void SetupForm()
@@ -62,7 +61,13 @@ namespace StudentAttendanceSystem
                 cbYear.DisplayMember = "Name";
                 cbYear.ValueMember = "YearID";
 
+
                 cbNoLecs.SelectedIndex = 0;
+
+                // Fill Lec Day ComboBox
+                cbLecOne.DataSource = GlobalVariables.WeekDays.Keys.ToList();
+                cbLecTwo.DataSource = GlobalVariables.WeekDays.Keys.ToList();
+
             }
             catch (Exception ex)
             {
@@ -73,6 +78,44 @@ namespace StudentAttendanceSystem
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAddEdit_Click(object sender, EventArgs e)
+        {
+            string Name = txtName.Text.Trim();
+            int CenterID = Convert.ToInt32(cbCenter.SelectedValue);
+            int YearID = Convert.ToInt32(cbYear.SelectedValue);
+            int NoLecs = Convert.ToInt32(cbNoLecs.SelectedItem);
+            string LecOne = cbLecOne.SelectedItem.ToString();
+            string LecTwo = "";
+            if (NoLecs == 2)
+            {
+                LecTwo = cbLecTwo.SelectedItem.ToString();
+            }
+
+            if (SAMSBuisness.Courses.Courses.AddCourse(Name, CenterID, NoLecs, YearID, LecOne, LecTwo))
+            {
+                MessageBox.Show("تمت إضافة المجموعة بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("حدث خطأ أثناء إضافة المجموعة", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cbNoLecs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbNoLecs.SelectedItem.ToString() == "2")
+            {
+                cbLecTwo.Enabled = true;
+            }
+            else
+            {
+                cbLecTwo.Enabled = false;
+                cbLecTwo.SelectedIndex = -1; // Reset selection if not applicable
+            }
         }
     }
 }

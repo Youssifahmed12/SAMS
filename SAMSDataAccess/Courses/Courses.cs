@@ -11,28 +11,32 @@ namespace SAMSDataAccess
 {
     public static class Courses
     {
-        public static bool AddCourse(string Name, int CenterID, int NoLecs,int StudentYearID)
+        public static int? AddCourse(string Name, int CenterID, int NoLecs, int StudentYearID)
         {
             try
             {
                 using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
                     conn.Open();
-                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Courses (Name,CenterID,NoLecs,StudentYearID) VALUES (@Name,@CenterID,@NoLecs,@StudentYearID)", conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand(
+                            "INSERT INTO Courses (Name, CenterID, NoLecs, StudentYearID) VALUES (@Name, @CenterID, @NoLecs, @StudentYearID); SELECT last_insert_rowid();", conn))
                     {
                         cmd.Parameters.AddWithValue("@Name", Name);
                         cmd.Parameters.AddWithValue("@CenterID", CenterID);
                         cmd.Parameters.AddWithValue("@NoLecs", NoLecs);
                         cmd.Parameters.AddWithValue("@StudentYearID", StudentYearID);
-                        return cmd.ExecuteNonQuery() > 0;
+
+                        int newID = Convert.ToInt32(cmd.ExecuteScalar());
+                        return newID;
                     }
                 }
             }
             catch (Exception)
             {
-                return false;
+                return null; 
             }
         }
+
         public static bool UpdateCourse(int CourseID, string Name, int CenterID, int NoLecs,int StudentYearID)
         {
             try
@@ -83,11 +87,23 @@ namespace SAMSDataAccess
                 using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
                     conn.Open();
-                    using (SQLiteCommand cmd = new SQLiteCommand(@"SELECT Courses.CourseID, Courses.Name AS CourseName,
-                                                                Centers.Name AS CenterName, Courses.NoLecs,StudentYears.Name AS YearName 
-                                                                FROM Courses JOIN
-                                                                Centers ON Courses.CenterID = Centers.CenterID
-                                                                JOIN StudentYears ON Courses.StudentYearID = StudentYears.YearID; ", conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand(@"SELECT 
+                                                                Courses.CourseID, 
+                                                                Courses.Name AS CourseName,
+                                                                Centers.Name AS CenterName, 
+                                                                Courses.NoLecs,
+                                                                GROUP_CONCAT(AttendingDays.Day, '، ') AS DaysOfAttendance,
+                                                                StudentYears.Name AS YearName
+                                                            FROM Courses
+                                                            JOIN Centers ON Courses.CenterID = Centers.CenterID
+                                                            JOIN StudentYears ON Courses.StudentYearID = StudentYears.YearID
+                                                            LEFT JOIN AttendingDays ON Courses.CourseID = AttendingDays.CourseID
+                                                            GROUP BY 
+                                                                Courses.CourseID, 
+                                                                Courses.Name, 
+                                                                Centers.Name, 
+                                                                Courses.NoLecs,
+                                                                StudentYears.Name; ", conn))
                     {
                         using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
                         {

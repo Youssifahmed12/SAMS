@@ -9,7 +9,7 @@ namespace SAMSBuisness.Courses
 {
     public static class Courses
     {
-        public static bool AddCourse(string Name, int CenterID, int NoLecs, int StudentYearID)
+        private static int? AddCourseData(string Name, int CenterID, int NoLecs, int StudentYearID)
         {
             return SAMSDataAccess.Courses.AddCourse(Name, CenterID, NoLecs,StudentYearID);
         }
@@ -25,5 +25,21 @@ namespace SAMSBuisness.Courses
         {
             return SAMSDataAccess.Courses.GetCourses();
         }
+
+        public static bool AddCourse(string Name,int CenterID,int NoLecs,int YearID,string LecOne,string LecTwo = "")
+        {
+            int? newID = AddCourseData(Name, CenterID, NoLecs, YearID);
+            bool isAdded = false;
+            if (newID.HasValue)
+            {
+                isAdded = SAMSBuisness.Attendance.AttendingDays.AddAttendanceDay(newID.Value,LecOne);
+                if (!string.IsNullOrEmpty(LecTwo))
+                {
+                   isAdded = SAMSBuisness.Attendance.AttendingDays.AddAttendanceDay(newID.Value, LecTwo);
+                }
+            }
+            return isAdded;
+        }
+
     }
 }

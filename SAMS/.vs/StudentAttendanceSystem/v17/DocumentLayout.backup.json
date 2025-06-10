@@ -3,34 +3,30 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\frmaddeditcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmaddeditcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\student\\studentyears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\frmaddeditcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmaddeditcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\frmaddeditcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmaddeditcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}|..\\SAMSBuisness\\SAMSBuisness.csproj|c:\\stuff\\projects\\sams\\samsbuisness\\student\\studentyears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\courses\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:frmviewcourses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}|..\\SAMSBuisness\\SAMSBuisness.csproj|c:\\stuff\\projects\\sams\\samsbuisness\\courses\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|C:\\Stuff\\Projects\\SAMS\\SAMS\\main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,38 +45,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StudentYears.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Student\\StudentYears.cs",
-              "RelativeDocumentMoniker": "..\\SAMSBuisness\\Student\\StudentYears.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Student\\StudentYears.cs",
-              "RelativeToolTip": "..\\SAMSBuisness\\Student\\StudentYears.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Courses\\Courses.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Courses\\Courses.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Courses\\Courses.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Courses\\Courses.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwF4AAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T19:52:45.704Z",
+              "WhenOpened": "2025-06-10T22:23:37.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Courses\\Courses.cs",
+              "RelativeDocumentMoniker": "..\\SAMSBuisness\\Courses\\Courses.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Courses\\Courses.cs",
+              "RelativeToolTip": "..\\SAMSBuisness\\Courses\\Courses.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwCgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T22:11:35.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StudentYears.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\StudentYears.cs",
-              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Student\\StudentYears.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Student\\StudentYears.cs",
-              "RelativeToolTip": "..\\SAMSDataAccess\\Student\\StudentYears.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T19:52:40.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "frmAddEditCourse.cs",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmAddEditCourse.cs",
               "RelativeDocumentMoniker": "frmAddEditCourse.cs",
               "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmAddEditCourse.cs",
               "RelativeToolTip": "frmAddEditCourse.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAEwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T19:39:40.011Z",
               "EditorCaption": ""
@@ -99,33 +95,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmMainMenu.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Main Menu\\frmMainMenu.cs",
-              "RelativeDocumentMoniker": "Main Menu\\frmMainMenu.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Main Menu\\frmMainMenu.cs",
-              "RelativeToolTip": "Main Menu\\frmMainMenu.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAApwH0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T19:00:33.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "frmViewCourses.cs",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmViewCourses.cs",
               "RelativeDocumentMoniker": "frmViewCourses.cs",
               "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmViewCourses.cs",
               "RelativeToolTip": "frmViewCourses.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAArwCIAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T18:49:00.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "frmViewCourses.cs [Design]",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\frmViewCourses.cs",
               "RelativeDocumentMoniker": "frmViewCourses.cs",
@@ -144,8 +127,7 @@
               "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Main Menu\\frmMainMenu.cs [Design]",
               "RelativeToolTip": "Main Menu\\frmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:46:37.163Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-08T23:46:37.163Z"
             }
           ]
         }

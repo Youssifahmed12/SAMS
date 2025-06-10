@@ -30,7 +30,7 @@
         {
             this.lbHeaderText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSchoolName = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbCenter = new System.Windows.Forms.ComboBox();
@@ -38,8 +38,8 @@
             this.cbNoLecs = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cbLecOne = new System.Windows.Forms.ComboBox();
+            this.cbLecTwo = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddEdit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -70,14 +70,14 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "الاسم :";
             // 
-            // txtSchoolName
+            // txtName
             // 
-            this.txtSchoolName.Font = new System.Drawing.Font("Questv1", 11F);
-            this.txtSchoolName.Location = new System.Drawing.Point(103, 84);
-            this.txtSchoolName.Name = "txtSchoolName";
-            this.txtSchoolName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtSchoolName.Size = new System.Drawing.Size(245, 32);
-            this.txtSchoolName.TabIndex = 5;
+            this.txtName.Font = new System.Drawing.Font("Questv1", 11F);
+            this.txtName.Location = new System.Drawing.Point(103, 84);
+            this.txtName.Name = "txtName";
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtName.Size = new System.Drawing.Size(245, 32);
+            this.txtName.TabIndex = 5;
             // 
             // label2
             // 
@@ -144,6 +144,7 @@
             this.cbNoLecs.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbNoLecs.Size = new System.Drawing.Size(245, 28);
             this.cbNoLecs.TabIndex = 12;
+            this.cbNoLecs.SelectedIndexChanged += new System.EventHandler(this.cbNoLecs_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -167,27 +168,27 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "المحاضرة الاولى :";
             // 
-            // comboBox4
+            // cbLecOne
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Questv1", 11F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(103, 305);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox4.Size = new System.Drawing.Size(245, 28);
-            this.comboBox4.TabIndex = 15;
+            this.cbLecOne.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLecOne.Font = new System.Drawing.Font("Questv1", 11F);
+            this.cbLecOne.FormattingEnabled = true;
+            this.cbLecOne.Location = new System.Drawing.Point(103, 305);
+            this.cbLecOne.Name = "cbLecOne";
+            this.cbLecOne.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbLecOne.Size = new System.Drawing.Size(245, 28);
+            this.cbLecOne.TabIndex = 15;
             // 
-            // comboBox5
+            // cbLecTwo
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Font = new System.Drawing.Font("Questv1", 11F);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(103, 356);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox5.Size = new System.Drawing.Size(245, 28);
-            this.comboBox5.TabIndex = 16;
+            this.cbLecTwo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLecTwo.Font = new System.Drawing.Font("Questv1", 11F);
+            this.cbLecTwo.FormattingEnabled = true;
+            this.cbLecTwo.Location = new System.Drawing.Point(103, 356);
+            this.cbLecTwo.Name = "cbLecTwo";
+            this.cbLecTwo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbLecTwo.Size = new System.Drawing.Size(245, 28);
+            this.cbLecTwo.TabIndex = 16;
             // 
             // label6
             // 
@@ -207,12 +208,13 @@
             this.btnAddEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddEdit.Font = new System.Drawing.Font("Questv1", 14F);
             this.btnAddEdit.ForeColor = System.Drawing.Color.White;
-            this.btnAddEdit.Location = new System.Drawing.Point(261, 412);
+            this.btnAddEdit.Location = new System.Drawing.Point(267, 412);
             this.btnAddEdit.Name = "btnAddEdit";
             this.btnAddEdit.Size = new System.Drawing.Size(128, 46);
             this.btnAddEdit.TabIndex = 18;
             this.btnAddEdit.Text = "اضف";
             this.btnAddEdit.UseVisualStyleBackColor = false;
+            this.btnAddEdit.Click += new System.EventHandler(this.btnAddEdit_Click);
             // 
             // btnCancel
             // 
@@ -221,7 +223,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Questv1", 14F);
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(105, 412);
+            this.btnCancel.Location = new System.Drawing.Point(111, 412);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(128, 46);
             this.btnCancel.TabIndex = 19;
@@ -237,8 +239,8 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAddEdit);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cbLecTwo);
+            this.Controls.Add(this.cbLecOne);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbNoLecs);
@@ -247,7 +249,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSchoolName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbHeaderText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddEditCourse";
@@ -262,7 +264,7 @@
 
         private System.Windows.Forms.Label lbHeaderText;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSchoolName;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbCenter;
@@ -270,8 +272,8 @@
         private System.Windows.Forms.ComboBox cbNoLecs;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cbLecOne;
+        private System.Windows.Forms.ComboBox cbLecTwo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAddEdit;
         private System.Windows.Forms.Button btnCancel;
