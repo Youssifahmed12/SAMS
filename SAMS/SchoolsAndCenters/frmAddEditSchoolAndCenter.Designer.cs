@@ -98,7 +98,7 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // frmAddEditSchool
+            // frmAddEditSchoolAndCenter
             // 
             this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,7 +110,7 @@
             this.Controls.Add(this.txtSchoolName);
             this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAddEditSchool";
+            this.Name = "frmAddEditSchoolAndCenter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddSchool";
             this.Load += new System.EventHandler(this.frmAddSchool_Load);

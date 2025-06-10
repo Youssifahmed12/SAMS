@@ -43,5 +43,15 @@ namespace StudentAttendanceSystem
                 MessageBox.Show("Error loading courses: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnAddCourse_Click(object sender, EventArgs e)
+        {
+
+            Form mainForm = Application.OpenForms.OfType<frmMainMenu>().FirstOrDefault();
+
+            frmAddEditCourse addEditCourseForm = new frmAddEditCourse();
+            UIHelpers.ShowDialogWithDim(mainForm,addEditCourseForm);
+            LoadData();
+        }
     }
 }

@@ -90,6 +90,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAddEditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditCourse.Designer.cs">
+      <DependentUpon>frmAddEditCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewCourses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
       <DependentUpon>frmViewSchools.cs</DependentUpon>
     </Compile>
     <Compile Include="Global\UIHelpers.cs" />
+    <EmbeddedResource Include="frmAddEditCourse.resx">
+      <DependentUpon>frmAddEditCourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmViewCourses.resx">
       <DependentUpon>frmViewCourses.cs</DependentUpon>
     </EmbeddedResource>
