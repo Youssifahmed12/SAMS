@@ -83,7 +83,11 @@ namespace SAMSDataAccess
                 using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
                     conn.Open();
-                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM Courses", conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand(@"SELECT Courses.CourseID, Courses.Name AS CourseName,
+                                                                Centers.Name AS CenterName, Courses.NoLecs,StudentYears.Name AS YearName 
+                                                                FROM Courses JOIN
+                                                                Centers ON Courses.CenterID = Centers.CenterID
+                                                                JOIN StudentYears ON Courses.StudentYearID = StudentYears.YearID; ", conn))
                     {
                         using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
                         {
