@@ -44,6 +44,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sideMenuPanel)).BeginInit();
             this.sideMenuPanel.SuspendLayout();
             this.pnlTop.SuspendLayout();
@@ -54,12 +55,13 @@
             // sideMenuPanel
             // 
             this.sideMenuPanel.Controls.Add(this.button9);
-            this.sideMenuPanel.Controls.Add(this.pictureBox2);
-            this.sideMenuPanel.Controls.Add(this.button8);
             this.sideMenuPanel.Controls.Add(this.button7);
             this.sideMenuPanel.Controls.Add(this.btnSchools);
             this.sideMenuPanel.Controls.Add(this.button5);
             this.sideMenuPanel.Controls.Add(this.button4);
+            this.sideMenuPanel.Controls.Add(this.button6);
+            this.sideMenuPanel.Controls.Add(this.pictureBox2);
+            this.sideMenuPanel.Controls.Add(this.button8);
             this.sideMenuPanel.Controls.Add(this.button3);
             this.sideMenuPanel.Controls.Add(this.button2);
             this.sideMenuPanel.Controls.Add(this.button1);
@@ -133,7 +135,7 @@
             this.button9.ForeColor = System.Drawing.SystemColors.Control;
             this.button9.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_report_48;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(0, 672);
+            this.button9.Location = new System.Drawing.Point(0, 755);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(263, 83);
             this.button9.TabIndex = 10;
@@ -166,7 +168,7 @@
             this.button7.ForeColor = System.Drawing.SystemColors.Control;
             this.button7.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_exam_48;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(0, 589);
+            this.button7.Location = new System.Drawing.Point(0, 672);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(263, 83);
             this.button7.TabIndex = 7;
@@ -186,7 +188,7 @@
             this.btnSchools.ForeColor = System.Drawing.SystemColors.Control;
             this.btnSchools.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_school_48;
             this.btnSchools.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSchools.Location = new System.Drawing.Point(0, 506);
+            this.btnSchools.Location = new System.Drawing.Point(0, 589);
             this.btnSchools.Name = "btnSchools";
             this.btnSchools.Size = new System.Drawing.Size(263, 83);
             this.btnSchools.TabIndex = 6;
@@ -207,7 +209,7 @@
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
             this.button5.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_learning_48;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(0, 423);
+            this.button5.Location = new System.Drawing.Point(0, 506);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(263, 83);
             this.button5.TabIndex = 5;
@@ -228,11 +230,11 @@
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_classroom_48;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(0, 340);
+            this.button4.Location = new System.Drawing.Point(0, 423);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(263, 83);
             this.button4.TabIndex = 4;
-            this.button4.Text = "الحصص";
+            this.button4.Text = "المحاضرات";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -309,6 +311,26 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(128)))), ((int)(((byte)(237)))));
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Questv1", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.Control;
+            this.button6.Image = global::StudentAttendanceSystem.Properties.Resources.icons8_group_48;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button6.Location = new System.Drawing.Point(0, 340);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(263, 83);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "المجاميع";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +371,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbHeaderText;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.Button button6;
     }
 }
 

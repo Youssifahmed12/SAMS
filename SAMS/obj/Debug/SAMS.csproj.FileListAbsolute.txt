@@ -30,3 +30,4 @@ C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmAddEditLectures
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmViewLectures.resources
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmViewCenters.resources
 C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmAddEditSchoolAndCenter.resources
+C:\Stuff\Projects\SAMS\SAMS\obj\Debug\StudentAttendanceSystem.frmViewCourses.resources
