@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\schoolsandcenters\\frmviewcenters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:schoolsandcenters\\frmviewcenters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\schoolsandcenters\\frmviewschools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:schoolsandcenters\\frmviewschools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\schoolsandcenters\\frmaddeditschoolandcenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:schoolsandcenters\\frmaddeditschoolandcenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\schoolsandcenters\\frmaddeditschoolandcenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:schoolsandcenters\\frmaddeditschoolandcenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\global\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:global\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,65 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmViewSchools.cs [Design]",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewSchools.cs",
-              "RelativeDocumentMoniker": "SchoolsAndCenters\\frmViewSchools.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewSchools.cs [Design]",
-              "RelativeToolTip": "SchoolsAndCenters\\frmViewSchools.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:28:56.195Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmViewCenters.cs [Design]",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewCenters.cs",
-              "RelativeDocumentMoniker": "SchoolsAndCenters\\frmViewCenters.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmViewCenters.cs [Design]*",
-              "RelativeToolTip": "SchoolsAndCenters\\frmViewCenters.cs [Design]*",
+              "Title": "frmMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Main Menu\\frmMainMenu.cs",
+              "RelativeDocumentMoniker": "Main Menu\\frmMainMenu.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Main Menu\\frmMainMenu.cs [Design]",
+              "RelativeToolTip": "Main Menu\\frmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:28:44.692Z",
+              "WhenOpened": "2025-06-08T23:46:37.163Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmAddEditSchoolAndCenter.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs",
-              "RelativeDocumentMoniker": "SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs",
-              "RelativeToolTip": "SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAD4vxoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:21:20.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmAddEditSchoolAndCenter.cs [Design]",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs",
-              "RelativeDocumentMoniker": "SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs [Design]",
-              "RelativeToolTip": "SchoolsAndCenters\\frmAddEditSchoolAndCenter.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:21:19.558Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GlobalVariables.cs",
-              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Global\\GlobalVariables.cs",
-              "RelativeDocumentMoniker": "Global\\GlobalVariables.cs",
-              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Global\\GlobalVariables.cs",
-              "RelativeToolTip": "Global\\GlobalVariables.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T20:57:29.657Z",
-              "EditorCaption": ""
             }
           ]
         }

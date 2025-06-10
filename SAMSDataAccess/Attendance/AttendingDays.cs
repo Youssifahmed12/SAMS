@@ -12,6 +12,29 @@ namespace SAMSDataAccess
 {
     public static class AttendingDays
     {
+        public static DataTable GetAllAttendingDays()
+        {
+            try
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
+                {
+                    DataTable dt = new DataTable();
+                    conn.Open();
+                    using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM AttendingDays", conn))
+                    {
+                        using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
+                    }
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         public static DataTable GetAllAttendingDaysForCourse(int CourseID)
         {
             try
