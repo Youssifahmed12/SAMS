@@ -3,6 +3,15 @@
   "WorkspaceRootPath": "C:\\Stuff\\Projects\\SAMS\\SAMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF38E202-43E7-49BE-B2F5-7AD9C40AF938}|..\\SAMSBuisness\\SAMSBuisness.csproj|c:\\stuff\\projects\\sams\\samsbuisness\\courses\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\courses\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19011166-5D33-4193-B41C-6406DFE512D1}|..\\SAMSDataAccess\\SAMSDataAccess.csproj|c:\\stuff\\projects\\sams\\samsdataaccess\\attendance\\attendingdays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|c:\\stuff\\projects\\sams\\sams\\main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AADCF4F6-7B55-44CE-857D-74984F2FC477}|SAMS.csproj|solutionrelative:main menu\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -23,6 +32,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Courses\\Courses.cs",
+              "RelativeDocumentMoniker": "..\\SAMSBuisness\\Courses\\Courses.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSBuisness\\Courses\\Courses.cs",
+              "RelativeToolTip": "..\\SAMSBuisness\\Courses\\Courses.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:19:49.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Courses\\Courses.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Courses\\Courses.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Courses\\Courses.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Courses\\Courses.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwC4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:19:40.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AttendingDays.cs",
+              "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\AttendingDays.cs",
+              "RelativeDocumentMoniker": "..\\SAMSDataAccess\\Attendance\\AttendingDays.cs",
+              "ToolTip": "C:\\Stuff\\Projects\\SAMS\\SAMSDataAccess\\Attendance\\AttendingDays.cs",
+              "RelativeToolTip": "..\\SAMSDataAccess\\Attendance\\AttendingDays.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAowB0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:14:56.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmMainMenu.cs [Design]",
               "DocumentMoniker": "C:\\Stuff\\Projects\\SAMS\\SAMS\\Main Menu\\frmMainMenu.cs",
               "RelativeDocumentMoniker": "Main Menu\\frmMainMenu.cs",

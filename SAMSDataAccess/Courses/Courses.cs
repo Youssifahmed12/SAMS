@@ -11,18 +11,19 @@ namespace SAMSDataAccess
 {
     public static class Courses
     {
-        public static bool AddCourse(string Name, int CenterID, int NoLecs)
+        public static bool AddCourse(string Name, int CenterID, int NoLecs,int StudentYearID)
         {
             try
             {
                 using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
                     conn.Open();
-                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Courses (Name,CenterID,NoLecs) VALUES (@Name,@CenterID,@NoLecs)", conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand("INSERT INTO Courses (Name,CenterID,NoLecs,StudentYearID) VALUES (@Name,@CenterID,@NoLecs,@StudentYearID)", conn))
                     {
                         cmd.Parameters.AddWithValue("@Name", Name);
                         cmd.Parameters.AddWithValue("@CenterID", CenterID);
                         cmd.Parameters.AddWithValue("@NoLecs", NoLecs);
+                        cmd.Parameters.AddWithValue("@StudentYearID", StudentYearID);
                         return cmd.ExecuteNonQuery() > 0;
                     }
                 }
@@ -32,19 +33,20 @@ namespace SAMSDataAccess
                 return false;
             }
         }
-        public static bool UpdateCourse(int CourseID, string Name, int CenterID, int NoLecs)
+        public static bool UpdateCourse(int CourseID, string Name, int CenterID, int NoLecs,int StudentYearID)
         {
             try
             {
                 using (SQLiteConnection conn = new SQLiteConnection(ConfigurationManager.ConnectionStrings["SAMSDB"].ConnectionString))
                 {
                     conn.Open();
-                    using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Courses SET Name = @Name, CenterID = @CenterID, NoLecs = @NoLecs WHERE CourseID = @CourseID", conn))
+                    using (SQLiteCommand cmd = new SQLiteCommand("UPDATE Courses SET Name = @Name, CenterID = @CenterID, NoLecs = @NoLecs , StudentYearID = @StudentYearID WHERE CourseID = @CourseID", conn))
                     {
                         cmd.Parameters.AddWithValue("@CourseID", CourseID);
                         cmd.Parameters.AddWithValue("@Name", Name);
                         cmd.Parameters.AddWithValue("@CenterID", CenterID);
                         cmd.Parameters.AddWithValue("@NoLecs", NoLecs);
+                        cmd.Parameters.AddWithValue("@StudentYearID", StudentYearID);
                         return cmd.ExecuteNonQuery() > 0;
                     }
                 }
